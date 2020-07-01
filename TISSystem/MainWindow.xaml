@@ -1,0 +1,52 @@
+﻿<Window x:Class="TISSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TISSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000" MinWidth="1000" MinHeight="450"
+        Activated="Window_Activated">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" x:Name="label" Text="발송현황" FontSize="30"  Margin="10,10,0,0" VerticalAlignment="Top" Width="Auto" TextAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="label2" Text="수취현황" FontSize="30"  Margin="10.2,10,-0.4,0" VerticalAlignment="Top" Width="Auto" TextAlignment="Center"/>
+
+        <DataGrid IsReadOnly="True"  Grid.Row="1" Grid.Column="0" Name="grdSendData" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="배송번호" Width="*" Binding="{Binding s_num}"/>
+                <DataGridTextColumn Header="발송회사" Width="*" Binding="{Binding fk_r_sender}"/>
+                <DataGridTextColumn Header="수취회사" Width="*" Binding="{Binding fk_r_receiver}"/>
+                <DataGridTextColumn Header="화물기사" Width="*" Binding="{Binding fk_r_deliver}"/>
+                <DataGridTextColumn Header="화물" Width="*" Binding="{Binding s_inform}"/>
+                <DataGridTextColumn Header="위치" Width="*" Binding="{Binding s_location}"/>
+                <DataGridTextColumn Header="배송상태" Width="*" Binding="{Binding s_driverstate}"/>
+                <DataGridTextColumn Header="완료여부" Width="*" Binding="{Binding s_delivery}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid IsReadOnly="True" Grid.Row="1" Grid.Column="2" Name="grdReceiveData" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="배송번호" Width="*"/>
+                <DataGridTextColumn Header="발송회사" Width="*"/>
+                <DataGridTextColumn Header="수취회사" Width="*"/>
+                <DataGridTextColumn Header="화물기사" Width="*"/>
+                <DataGridTextColumn Header="화물" Width="*"/>
+                <DataGridTextColumn Header="위치" Width="*"/>
+                <DataGridTextColumn Header="배송상태" Width="*"/>
+                <DataGridTextColumn Header="완료여부" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="2" Grid.ColumnSpan="3" Content="발송등록" FontSize="20" Margin="0,0,-0.4,0"></Button>
+
+    </Grid>
+</Window>

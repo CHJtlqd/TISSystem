@@ -1,0 +1,15 @@
+C:\SRC\TISSystem\TISSystem\bin\Debug\TISSystem.exe.config
+C:\SRC\TISSystem\TISSystem\bin\Debug\TISSystem.exe
+C:\SRC\TISSystem\TISSystem\bin\Debug\TISSystem.pdb
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.csprojAssemblyReference.cache
+C:\SRC\TISSystem\TISSystem\obj\Debug\MainWindow.g.cs
+C:\SRC\TISSystem\TISSystem\obj\Debug\App.g.cs
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem_MarkupCompile.cache
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem_MarkupCompile.lref
+C:\SRC\TISSystem\TISSystem\obj\Debug\MainWindow.baml
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.g.resources
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.Properties.Resources.resources
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.csproj.GenerateResource.cache
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.csproj.CoreCompileInputs.cache
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.exe
+C:\SRC\TISSystem\TISSystem\obj\Debug\TISSystem.pdb
